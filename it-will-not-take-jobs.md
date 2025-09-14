@@ -1,0 +1,18 @@
+## The Craft of Code: Why AI Augments, Not Replaces, the Software Engineer
+
+Rise of coding abilities in large language models has sparked a pervasive fear among software developers.
+
+The popular saying is that AI coding agents are more like collaborators rather than outright replacements. The true craft of the software engineer lies not in the mechanical act of writing code, but in the sophisticated and deliberate decisions that ensure software is robust, reliable, and secure.
+
+High-stakes production systems, which require "four nines" (a 99.99% availability) of uptime, are not just code. They are complex ecosystems built with series of decisions with big picture in mind. The role of the engineer is to not only write code, but also to manage its entire lifecycle: debugging, testing, deploying, and maintaining it under pressure. When software inevitably fails at two in the morning, a human must be there to diagnose the problem, not simply to "vibe" their way to a solution. The task of generating code is merely a small component of this much larger, more critical responsibility.
+
+To understand the true value of a software engineer, one must stop conflating code generation with the art of engineering. Jeff Atwood, a co-founder of Stack Overflow, famously said, "The best code is no code at all," a sentiment that highlights the burden every line of code carries. Each line must be maintained, debugged, and accounted for. The work of an architect is not in the blueprint, but in the thousands of decisions that precede it. Similarly, software engineers make crucial choices about architecture, from monoliths to microservices to event-driven systems. An AI can generate patterns, but it lacks the contextual understanding to make the nuanced trade-offs required for a unique, "snowflake" production system.
+
+Will this change as models become more capable? Perhaps? But I think it's going to require a change in how models are built and optimized. Software engineering requires models that can do more than just generate code.
+
+When a person runs into a problem, they are able to temporarily stash the full context, focus on resolving the issue, and then pop their mental stack to get back to the problem in hand. They are also able to zoom out and focus on the big picture, allowing the details to temporarily disappear, diving into small pieces as necessary. We don't just keep adding more words to our context window, because it would drive us mad.
+
+Even if it wasn't just too much context to deal with, we know that current generative models suffer from several issues that directly impact their ability to maintain clear mental models:
+
+
+Embracing this new era requires a shift in mindset and a renewed focus on fundamental engineering skills. As AI takes on more of the rote coding tasks, the ability to perform a thorough code review will become paramount. This is a skill that many in the industry may have neglected, yet it is essential for safely integrating AI-generated code into production systems. Furthermore, engineers must treat AI tools with the same professionalism they would a junior colleague. This means providing clear and well-defined tasks, maintaining documented standards, and working in a reproducible environment. By engaging in a "create, refine, and review" loop, engineers can harness the power of AI to boost productivity without sacrificing quality or safety.
