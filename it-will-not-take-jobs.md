@@ -8,7 +8,7 @@ High-stakes production systems, which require "four nines" (a 99.99% availabilit
 
 To understand the true value of a software engineer, one must stop conflating code generation with the art of engineering. Jeff Atwood, a co-founder of Stack Overflow, famously said, "The best code is no code at all," a sentiment that highlights the burden every line of code carries. Each line must be maintained, debugged, and accounted for. The work of an architect is not in the blueprint, but in the thousands of decisions that precede it. Similarly, software engineers make crucial choices about architecture, from monoliths to microservices to event-driven systems. An AI can generate patterns, but it lacks the contextual understanding to make the nuanced trade-offs required for a unique, "snowflake" production system.
 
-Will this change as models become more capable? Perhaps? But I think it's going to require a change in how models are built and optimized. Software engineering requires models that can do more than just generate code.
+Will this change as models become more capable? Perhaps? But it's going to require a change in how models are built and optimized. Software engineering requires models that can do more than just generate code.
 
 When a person runs into a problem, they are able to temporarily stash the full context, focus on resolving the issue, and then pop their mental stack to get back to the problem in hand. They are also able to zoom out and focus on the big picture, allowing the details to temporarily disappear, diving into small pieces as necessary. We don't just keep adding more words to our context window, because it would drive us mad.
 

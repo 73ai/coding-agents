@@ -62,33 +62,48 @@ The system prompt is a crucial component of coding agents, as it defines the age
 - **Context**: Providing relevant context or background information that can help the agent make informed decisions and generate appropriate responses
 
 
+# Types of Coding Agents
+
+There are roughly five main types of coding agents currently in use:
+
+1. IDE Extensions
+2. Web Based Agents
+3. General-purpose CLI Agents
+4. Use case specific Bots
+5. Autonomous Agents
+6. Background Task Agents
+
+There's no single tool to recommend because the landscape is so fragmented and a tool that works for one person might not work for another. The best approach is to understand how they function and what trade-offs they make.
+
+## Perpetual Prototypes
+
+One of the most significant benefits of coding agents is their ability to create **"perpetual prototypes."** Imagine being in the middle of a project and wishing you had a small, temporary debugging tool or a better way to visualize data. With a coding agent, you can create these small, purpose-built tools on the fly. This makes the development workflow more enjoyable and efficient, as you can have the agent on the side working on these helpful utilities.
+
+For this to work well, you need a tool that allows for a mix of "hands-on" and "hands-off" interaction. This is different from a fully detached tool like a GitHub extension that makes a change in a pull request, where it's much harder to understand the impact of your changes. CLI-based or IDE-integrated tools are great for this because they allow for quick experimentation and steering the agent as it works.
+
 # State of existing coding tools/agents
 
 There are several tools available today, each with its own strengths and weaknesses. Some of the most notable ones include:
 
-1. Editor Based Tools
-2. Web Based Tools
-3. Terminal Based Tools
-4. Bots
-5. Autonomous Coding Tools
 
+## 1. IDE Extensions (Editor Based Tools)
 
-## 1. Editor Based Tools
+Tools like **GitHub Copilot** and **Cursor** are the most well-known IDE extensions. They act as autocomplete but can also perform more complex coding loops. Editor based tools like Github Copilot, Cursor, WindSurf, Tabnine, Cline, Kilo Code etc. are integrated into code editors (like VSCode) and provide real-time code suggestions and completions based on the context of the current file and the history.
 
-Editor based tools like Github Copilot, Cursor, WindSurf, Tabnine, Cline, Kilo Code etc. These tools are integrated into code editors(like VSCode) and provide real-time code suggestions and completions based on the context of the current file and the history.
-
-Recently most of these tools have have this new mode ("Agent Mode") that allows users to use it with agentic loop, where the agent can perform complex coding tasks with human in the loop.
+Cursor, for example, has become very capable and can even run on a remote server. Recently most of these tools have this new mode ("Agent Mode") that allows users to use it with agent loop, where the agent can perform complex coding tasks with human in the loop.
 
 ## 2. Web Based Tools
-1. Web based tools like Replit, v0, Lovable, Firebase Studio, etc. These tools provide a web-based coding environment with agentic capabilities, allowing users to build web applications directly in the browser by providing a set of instructions. 
+
+Web based tools like Replit, v0, Lovable, Firebase Studio, etc. provide a web-based coding environment with agent capabilities. These are often very similar to other coding agents in how they work, but they are specifically targeted at creating user interfaces. They behave differently from a general-purpose tool, as they are geared toward a single goal - allowing users to build web applications directly in the browser by providing a set of instructions. 
 
 Most of these tools are primarily focused on UI/frontend oriented web development, but some also support for serverless storage engines like Firebase, Supabase allowing users to build full-stack applications without needing to set up a local development environment.
 
 They also include deployment capabilities, allowing users to deploy their applications directly from the same environment.
 
 
-## 3. Terminal Based Tools
-1. CLI based tools like Claude Code, OpenAI Codex, Gemini CLI, Cursor CLI, OpenCode etc. These tools are terminal based tools and provide a terminal user interface for interacting with the AI coding agent, allowing users to perform various tasks through text input.
+## 3. General-purpose CLI Tools (Terminal Based)
+
+CLI based tools like Claude Code, OpenAI Codex, Gemini CLI, Cursor CLI, OpenCode etc. are terminal based tools that provide a terminal user interface for interacting with the AI coding agent, allowing users to perform various tasks through text input. These general-purpose, local tools run on your local machine and can access anything you give them permissions for, making them very versatile.
 
 These tools can do pretty much everything on your local machine given the right permissions, such as reading and writing files, executing commands, and even deploying code.
 
@@ -96,19 +111,22 @@ Claude code is the first tool in this category and became most popular tool amon
 
 Claude Code, OpenAI Codex and Gemini CLI are the tool by Anthropic, OpenAI and Google respectively. They restrict the usage of their models to their own tools, which means you cannot use any other model with these tools.
 
-## 4. Bots
+## 4. Use case specific Bots
 1. Bots are use case specific agents that are designed to perform specific tasks or workflows, such as code review, bug fixing, or documentation generation. 
 
 Example of bots including Code Rabbit, etc.
 
 
-## 5. Autonomous Coding Tools
+## 5. Autonomous Agents
 
-These tools run on server and perform agentic loop on the given task. 
+These standalone agents can work independently, often through a CLI or running on a remote server. Tools like **Devin** fall into this category. They can perform agent loops on given tasks autonomously. 
 
-Github Copilot, Claude Code etc. provide this capability, where the users can assign a github issue to the tool and it will churn out the PR by performing the agentic loop on the issue description and any other relevant context given in the issue.
+Github Copilot, Claude Code etc. provide this capability, where the users can assign a github issue to the tool and it will churn out the PR by performing the agent loop on the issue description and any other relevant context given in the issue.
 
 Cursor recently released server version of their tool, which allows users to perform tasks remotely.
+
+## 6. Background Task Agents
+TBD
 
 ## Factors to consider when choosing a coding agent
 When choosing a coding agent, there are several factors to consider:
